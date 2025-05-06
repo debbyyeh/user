@@ -10,11 +10,15 @@ export const Pagination = () => {
     const nextPage = usePageStore((state) => state.nextPage);
     const prevPage = usePageStore((state) => state.prevPage);
 
-    const totalPages = Math.ceil(cards.length / cardsPerPage) + 1;
-
+    const totalPages = cards.length === 0 ? 1 : Math.ceil(cards.length / cardsPerPage);
+    
     return(
         <div className="pagination">
-        <button onClick={prevPage} disabled={currentPage === 1}>
+        <button onClick={()=>{
+          if (currentPage > 1) {
+              prevPage();
+          }
+        }} disabled={currentPage === 1}>
           上一頁
         </button>
         <span>

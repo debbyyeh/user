@@ -3,7 +3,7 @@
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  min-height: 500px;
+  min-height: 600px;
   position: relative;
 }
 .card{
@@ -20,17 +20,15 @@
 }
 
 @media(max-width: 768px) {
-  .card-wrapper{
-    min-height: 400px;
+  .card-wrapper {
+    max-height: 300px;
+    overflow-y: auto;
   }
   .card {
     width: calc(100% / 2 - 10px);
   }
 }
 @media(max-width: 480px) {
-  /* .card-wrapper{
-    min-height: 300px;
-  } */
   .card {
     width: calc(100% - 10px);
   }
@@ -173,10 +171,8 @@
     width: 120px;
 
     position: absolute;
-    left: 50%;
-
-    transform: translateX(-50%);
-    bottom: 0px;
+    top: 20px;
+    right: 0;
 
     cursor: pointer;
 }
@@ -184,68 +180,3 @@
 .addUser:hover{
     background-color: #eee;
 }
-
-/* .popup-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.popup {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: calc(100% - 40px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.popup-content label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.popup-content input,
-.popup-content select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.popup-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.error{
-  color:tomato;
-  line-height: 35px;
-  font-size: 14px;
-}
-
-.popup-actions button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.popup-actions button:first-child {
-  background-color: #007bff;
-  color: white;
-}
-
-.popup-actions button:last-child {
-  background-color: #ccc;
-  color: black;
-} */
