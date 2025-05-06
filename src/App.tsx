@@ -1,4 +1,3 @@
-import './App.css';
 import { Pagination } from './components/pagination/Pagination';
 import { Content } from './components/content/Content';
 

@@ -1,17 +1,30 @@
 .pagination{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 20px;
-    bottom: -200px;
-    >button{
-      padding: 5px 10px;
-      cursor: pointer;
-    }
-    >span{
-      margin-left:10px ;
-      margin-right: 10px;
-    }
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -80px;
+
+  width: 100%;
+  
+  >button{
+    padding: 5px 10px;
+    cursor: pointer;
   }
+  >span{
+    margin-left:10px ;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pagination{
+    bottom: -80px;
+  }
+}
+@media (max-width: 480px) {
+  .pagination{
+    bottom: -5px;
+  }
+}
   
   

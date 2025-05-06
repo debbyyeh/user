@@ -28,6 +28,9 @@
   }
 }
 @media(max-width: 480px) {
+  /* .card-wrapper{
+    min-height: 300px;
+  } */
   .card {
     width: calc(100% - 10px);
   }
