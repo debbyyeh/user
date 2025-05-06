@@ -1,0 +1,17 @@
+.pagination{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    bottom: -200px;
+    >button{
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    >span{
+      margin-left:10px ;
+      margin-right: 10px;
+    }
+  }
+  
+  
