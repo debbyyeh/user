@@ -1,0 +1,35 @@
+
+.icon-pencil{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.icon-pencil:hover {
+  color: #007bff;
+}
+
+.icon-pencil.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+  
+.icon-delete{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.icon-delete:hover {
+  scale: 1.2;
+  transition: all 0.3s ease;
+}
+  
+.icon-delete svg {
+    fill: #dc3545;
+}
