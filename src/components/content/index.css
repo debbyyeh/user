@@ -1,0 +1,26 @@
+.content-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 600px;
+}
+
+.search {
+    margin: 20px;
+}
+.search input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.search ul {
+    list-style: none;
+    padding: 0;
+}
+.search li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
