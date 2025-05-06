@@ -8,6 +8,8 @@ interface CardStore{
     updateCard: (id: string, updatedData: Partial<UserData>) => void;
 
     currentPage: number;
+
+    isPopupVisible: boolean;
 }
 
 const useCardStore = create<CardStore>((set)=>({
@@ -23,7 +25,8 @@ const useCardStore = create<CardStore>((set)=>({
         cards: state.cards.map((card) =>
             card.id === id ? { ...card, ...updatedData } : card
         ),
-    }))
+    })),
+    isPopupVisible: false,
 }));
 
 
