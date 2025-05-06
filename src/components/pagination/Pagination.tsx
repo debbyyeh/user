@@ -10,7 +10,7 @@ export const Pagination = () => {
     const nextPage = usePageStore((state) => state.nextPage);
     const prevPage = usePageStore((state) => state.prevPage);
 
-    const totalPages = Math.ceil(cards.length / cardsPerPage);
+    const totalPages = Math.ceil(cards.length / cardsPerPage) + 1;
 
     return(
         <div className="pagination">
@@ -20,7 +20,11 @@ export const Pagination = () => {
         <span>
           第 {currentPage} 頁 / 共 {totalPages} 頁
         </span>
-        <button onClick={nextPage} disabled={currentPage === totalPages}>
+        <button onClick={()=>{
+            if (currentPage < totalPages) {
+                nextPage();
+            }
+        }} disabled={currentPage === totalPages}>
           下一頁
         </button>
       </div>

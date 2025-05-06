@@ -3,7 +3,8 @@
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  min-height: 600px;
+  min-height: 500px;
+  position: relative;
 }
 .card{
   position: relative;
@@ -19,6 +20,9 @@
 }
 
 @media(max-width: 768px) {
+  .card-wrapper{
+    min-height: 400px;
+  }
   .card {
     width: calc(100% / 2 - 10px);
   }
@@ -169,7 +173,7 @@
     left: 50%;
 
     transform: translateX(-50%);
-    bottom: -100px;
+    bottom: 0px;
 
     cursor: pointer;
 }
@@ -178,7 +182,7 @@
     background-color: #eee;
 }
 
-.popup-overlay {
+/* .popup-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -195,7 +199,7 @@
   background: white;
   padding: 20px;
   border-radius: 8px;
-  width: 400px;
+  width: calc(100% - 40px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -241,4 +245,4 @@
 .popup-actions button:last-child {
   background-color: #ccc;
   color: black;
-}
+} */
