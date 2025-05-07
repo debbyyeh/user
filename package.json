@@ -2,7 +2,7 @@
   "name": "user",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://debbyyeh.github.io/user",
+  "homepage": "https://debbyyeh.github.io/user/",
   "dependencies": {
     "@supabase/supabase-js": "^2.49.4",
     "@testing-library/dom": "^10.4.0",
