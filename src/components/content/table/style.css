@@ -1,7 +1,14 @@
+.table-wrapper{
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 .user-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
   }
   
   .user-table th,

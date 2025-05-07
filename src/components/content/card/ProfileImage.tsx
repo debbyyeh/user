@@ -60,7 +60,7 @@ export const ProfileImage = ({card,handleDataChange}: ProfileImageProps) => {
                             }
                         }}
                     />
-                    </div>
+            </div>
             {card.isEditing && isUploading ? <p>圖片更新中...</p>: null}
         </>
     )

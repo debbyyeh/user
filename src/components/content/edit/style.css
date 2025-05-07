@@ -25,6 +25,12 @@
   color: #333;
 }
 
+@media (max-width: 480px) {
+  .icon-delete {
+    margin-left: 0px;
+  }
+}
+
 .icon-delete:hover {
   scale: 1.2;
   transition: all 0.3s ease;
